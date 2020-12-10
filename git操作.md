@@ -15,6 +15,7 @@
    - Git checkout(branchname)切换到新的分支
    - Git cinfig -l:查看config的信息
    - git pull --ff upstream main
+   
  ![仓库间的关系](https://github.com/keira-hq/front-end-learning/blob/main/img/git%201.png)
 ### **远程仓库和github上自己的仓库不同步**
    - 使用fetch命令 先将远程upstream的内容同步到本地
