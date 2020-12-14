@@ -1,0 +1,19 @@
+## junit ##
+ - @Before 初始化测试资源
+ - @After 释放测试单元
+ - 每个 @Test
+    - 实例化Calculator Test
+    - 执行@Before方法
+    - 执行@Test方法
+    - 执行@After方法
+ - 使用@Before和@after可以保证：
+  - 单个@Test方法执行前会创建新的xxxTest方法实例 实例变量的状态**不会**传递给下一个@test方法
+  - 单个@Test方法执行前后会执行@Before和@After方法
+  - @Before方法初始化的对象存放在实例字段中
+  - 实例字段的状态不会影响下一个@Test
+  - @BeforeClass和@AfterClass静态方法：
+    - 在执行所有@Test方法前执行@BeforeClass静态方法
+    - 执行所有测试
+    - 在执行所有@Test方法后执行@AfterClass静态方法
+    - @BeforeClass静态方法初始化的对象只能存放在静态字段中
+    - 静态字段的状态会影响到所有@Test
